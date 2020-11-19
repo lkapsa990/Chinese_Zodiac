@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>chinesezodiac.html</title>
+<script>
+function animalFinder() {
+  var year = document.getElementById("year").value;
+  var division = year / 12;
+  var remainder = year % 12;
+  if (remainder == 0) {
+    document.getElementById("pic").innerHTML = "<img src = 'rat.png'>";
+  }
+  if (remainder == 1) {
+    document.getElementById("pic").innerHTML = "<img src = 'ox.jpg'>";
+  }
+  if (remainder == 2) {
+    document.getElementById("pic").innerHTML = "<img src = 'tiger.jpg'>";
+  }
+  if (remainder == 3) {
+    document.getElementById("pic").innerHTML = "<img src = 'rabbitjpng'>";
+  }
+  if (remainder == 4) {
+    document.getElementById("pic").innerHTML = "<img src = 'dragon.jpg'>";
+  }
+  if (remainder == 5) {
+    document.getElementById("pic").innerHTML = "<img src = 'snake.jpg'>";
+  }
+  if (remainder == 6) {
+    document.getElementById("pic").innerHTML = "<img src = 'horse.jpg'>";
+  }
+  if (remainder == 7) {
+    document.getElementById("pic").innerHTML = "<img src = 'goat.jpg'>";
+  }
+  if (remainder == 8) {
+    document.getElementById("pic").innerHTML = "<img src = 'monkey.jpg'>";
+  }
+  if (remainder == 9) {
+    document.getElementById("pic").innerHTML = "<img src = 'rooster.jpg'>";
+  }
+  if (remainder == 10) {
+    document.getElementById("pic").innerHTML = "<img src = 'dog.jpg'>";
+  }
+  if (remainder == 11) {
+    document.getElementById("pic").innerHTML = "<img src = 'pig.jpg'>";
+  }
+}
+//1) get the year from the user
+//2) Using "if - statements" and % (mod) determine animal
+//3) Display animal
+</script>
+<style>
+body {
+   background-image: url("background.jpg");
+}
+h2 {
+  font-size: 36px;
+  font-family: Comic;
+  color: yellow;
+}
+h1 {
+  font-size: 36px;
+  font-family: Comic;
+  color: yellow;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>ZODIAC FINDER</h1>
+<h2>ENTER YOUR BIRTH YEAR</h2>
+<input type= "text" id = "year">
+<input type = "button" value = "Enter" onclick = "animalFinder()">
+<br>
+<span id = "pic"></span>
+</center>
+</body>
+</html>
